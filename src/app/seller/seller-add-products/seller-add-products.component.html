@@ -1,0 +1,44 @@
+<div >
+
+    <form #addProForm = "ngForm" (ngSubmit)="submit(addProForm.value)" class="form">
+        <h2>Add product</h2>
+        <input type="text"
+            class="input-field"
+         placeholder="product name"
+         name="name"
+         ngModel   
+        >
+        <input type="text"
+            class="input-field"
+         placeholder="product price"
+         name="price"
+         ngModel   
+        >
+        <input type="text"
+            class="input-field"
+         placeholder="product color"
+         name="color"
+         ngModel   
+        >
+        <input type="text"
+            class="input-field"
+         placeholder="product category"
+         name="category"
+         ngModel   
+        >
+        <textarea type="text"
+            class="input-field"
+         placeholder="product discription"
+         name="discription"
+         ngModel >  
+        </textarea>
+        <input type="text"
+            class="input-field"
+         placeholder="product image"
+         name="image"
+         ngModel   
+        >
+        <input type="submit" name="submit" id="">
+    </form>
+
+</div>

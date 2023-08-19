@@ -1,0 +1,40 @@
+<div *ngIf="!showLogin" class="Seller-register">
+    <h1 class="text-center">Seller-Register</h1>
+    <form #registerSeller="ngForm" (ngSubmit)="registerSellers(registerSeller.value)" class="form">
+        <input ngModel name="name" class="input-field" type="text" placeholder="Name">
+        <input ngModel name="email" class="input-field" type="text" placeholder="Email">
+        <input ngModel name="password" class="input-field" type="password" placeholder="password">
+        <input class="input-field" type="submit">
+        <a (click)="openLogin()">Already have an account? LogIn</a>
+    </form>
+</div>
+<div *ngIf="showLogin" class="Seller-Login">
+    <h1 class="text-center">Seller-Login</h1>
+    <form #loginSeller="ngForm" (ngSubmit)="loginSellers(loginSeller.value)" class="form">
+        <input ngModel name="name" class="input-field" type="text" placeholder="Name">
+        <!-- <input ngModel name="email" class="input-field" type="text" placeholder="Email"> -->
+        <input ngModel name="password" class="input-field" type="password" placeholder="password">
+        <input class="input-field" type="submit">
+        <p *ngIf="showError" style="color :red; background-color: white;">User credentials are wrong!</p>
+        <a (click)="openRegister()">Not have an accout? Register Now!</a>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

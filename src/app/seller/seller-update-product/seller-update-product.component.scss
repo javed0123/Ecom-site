@@ -1,0 +1,24 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;  
+    border-radius: 10px;
+    width: 50%;
+    margin :auto;
+
+}
+.input-field{
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    margin:0 20px;
+}   
+.updateMessage{background-color: lightgreen;
+    padding: 10px;
+    width: 140px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px gray;
+}

@@ -1,0 +1,30 @@
+<div class="product-detail">
+    <h1>Your product detail : </h1>
+    <!-- <div *ngIf="noItemMessage" >
+        <p>There are no Item to show..</p>
+    </div> -->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="item" >
+                <div class="product-item">
+                    <img src="{{product?.image}}" height="300px" width="400px" alt="">
+                </div>
+                <div class="product-detail">
+                    <p>{{product?.name}}</p>
+                    <p>{{product?.price}}</p>
+                </div>
+                <div class="product-links">
+                    <a href="">Buy Now</a> <br>
+                    <a href="">Add to Cart</a> <br>
+                </div>
+                <div class="quantity">
+                    <button (click)="decreaseQuantity()">-</button>
+                    <input type="text" [value]="quantityOfProduct">
+                    <button (click)="increaseQuantity()">+</button>
+                    <p *ngIf="showQuantityError" style="color : red;">You must buy atleat 1 product!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <router-outlet></router-outlet> -->
+</div>

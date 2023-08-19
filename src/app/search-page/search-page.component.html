@@ -1,0 +1,24 @@
+<div class="search-page-wrapper">
+    <h1>Your results...</h1>
+    <div *ngIf="noItemMessage" >
+        <p>There are no Item to show..</p>
+    </div>
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let item of searchedResults">
+            <div class="item" >
+                <div class="product-item">
+                    <img src="{{item.image}}" height="300px" width="400px" alt="">
+                </div>
+                <div class="product-detail">
+                    <p>{{item.name}}</p>
+                    <p>{{item.price}}</p>
+                </div>
+                <div class="product-links">
+                    <a href="">add to cart</a> <br>
+                    <a routerLink ='/Product-details/{{item.id}}'>more details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <router-outlet></router-outlet> -->
+</div>

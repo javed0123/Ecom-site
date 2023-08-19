@@ -1,0 +1,30 @@
+<div class="productlist">
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>images</th>
+                <th>name</th>
+                <th>price</th>
+                <th>color</th>
+                <th>category</th>
+                <th>discription</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of productlist">
+                <td><img src="{{item.image}}" height="200px" width="200px" style="margin:15px" alt=""></td>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.color}}</td>
+                <td>{{item.category}}</td>
+                <td>{{item.discription}}</td>
+                <button type="button" (click)="deleteItem(item.id)" >Delete</button>
+                <a routerLink="/Update-Product/{{item.id}}">Update</a>
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
