@@ -1,6 +1,6 @@
 <div class="Header-container">
   <!--header logo and searchbar------- -->
-  <h1 class="primary-logo"><a routerLink="Home"> MyLOGO</a></h1>
+  <h1 class="primary-logo"><a routerLink="Home"> MyLOGO!</a></h1>
 
   <div *ngIf="menuType=== 'default' || 'seller' " class="searchbar">
     <input #searchItem (keyup)="searchProduct($event)" (blur)="hideSearchedProduct()" placeholder="Search something..."
