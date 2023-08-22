@@ -11,29 +11,29 @@ import { SearchPageComponent } from './search-page/search-page.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 
 const routes: Routes = [
-  {
-    component:HomeComponent,
-    path:'Home'
-  },
   // {
   //   component:HomeComponent,
-  //   path:''
+  //   path:'Home'
   // },
+  {
+    component:HomeComponent,
+    path:''
+  },
   {
     component:SellerRegisterComponent,
     path:'Seller-Register',
     
   },
-  {
-    component:HomeComponent,
-    path:'Login',
+  // {
+  //   component:HomeComponent,
+  //   path:'Login',
     
-  },
-  {
-    component:HomeComponent,
-    path:'Cart',
+  // },
+  // {
+  //   component:HomeComponent,
+  //   path:'Cart',
     
-  },
+  // },
   {
     component:SellerHomeComponent,
     path:'Seller-Home',
