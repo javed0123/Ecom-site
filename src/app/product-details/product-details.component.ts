@@ -33,15 +33,17 @@ ngOnInit(){
 
 increaseQuantity(){
   this.quantityOfProduct = this.quantityOfProduct + 1;
+  this.showQuantityError = false;
 }
 decreaseQuantity(){
   if(this.quantityOfProduct > 1){
     this.quantityOfProduct = this.quantityOfProduct - 1;
+    this.showQuantityError = false;
   }
   else this.showQuantityError = true;
 
 }
-
+  
 
 
 
