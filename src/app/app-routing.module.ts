@@ -11,10 +11,10 @@ import { SearchPageComponent } from './search-page/search-page.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 
 const routes: Routes = [
-  // {
-  //   component:HomeComponent,
-  //   path:'Home'
-  // },
+  {
+    component:HomeComponent,
+    path:'Home'
+  },
   {
     component:HomeComponent,
     path:''
